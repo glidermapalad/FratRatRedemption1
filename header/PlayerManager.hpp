@@ -20,7 +20,7 @@ class PlayerManager {
         PlayerManager(string, string);
         void setPlayerName();
         string getPlayerName();
-        void setPlayerType();
+        void setPlayerType(int);
         string getPlayerType();
         void setPlayerRep(const int &);
         int getPlayerRep();

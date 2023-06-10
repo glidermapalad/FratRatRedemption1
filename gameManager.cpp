@@ -1,9 +1,4 @@
 #include <iostream>
-// #include <termios.h>
-// #include <fcntl.h>
-// #include <unistd.h>
-// #include <chrono>
-// #include <thread> 
 #include <cstdlib>
 
 #include "header/gameClock.hpp"
@@ -122,8 +117,11 @@ int main()
     int selectedInteractionOption = 0; 
 
     //SET MAP MORALITIES HERE
-    map.setMapReputationRange(65); 
     map.setMapMoralityRange(65); 
+    map.setMapReputationRange(169); 
+
+    map.updateMapMorality(playerManager.getPlayerMor());
+    map.updateMapReputation(playerManager.getPlayerRep()+84); 
 
 
     //PRIMARY LOOP
@@ -241,6 +239,8 @@ int main()
 
                 if (dialogueState < 4) {
                     statManager.updateStats(playerManager, InteractingNPC.getName(), InteractingNPC.getType(), selectedInteractionOption, dialogueState);
+                    map.updateMapMorality(playerManager.getPlayerMor());
+                    map.updateMapReputation(playerManager.getPlayerRep()+84); 
                 }
 
                 ++dialogueState;
@@ -268,10 +268,7 @@ int main()
     map.printMap(ANSI_GREY); 
     cout<<ANSI_DEFAULT_TERMINAL_COLOR;
 
-    inputGetter.setInputMode(0); 
-
-  
-    cout<<"\f\nGAME EXITED!\n\n"; 
+    inputGetter.setInputMode(0);  
 
     // OUTPUT ENDING
     EndingManager ending(playerManager.getPlayerRep(), playerManager.getPlayerMor(), playerManager.getPopularRep(), playerManager.getNormieRep(), playerManager.getOutcastRep(), playerManager.getPlayerType());

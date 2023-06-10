@@ -69,7 +69,8 @@ void mapManager::printMap(const string & currentDefaultColor) const{ // WAS TOLD
 
     TitlePrint title;
     title.initializeTitle("./title.txt");
-
+    cout << currentDefaultColor;
+    
     for(int i = 0; i<23;i++){
         for(int j = 0; j <100; j++){
             if(!mapXY[i][j].getPlayerActive()){
@@ -120,7 +121,8 @@ void mapManager::updateMapMorality(const int & newMorality){
             if(currMapMorality<=0){
                 break; 
             }
-            mapXY[i][j].setCoordCharacter('#'); 
+            mapXY[i][j].setCoordCharacter('#');
+            mapXY[i][j].setCoordColor("\033[34m"); 
             currMapMorality--; 
         }
     }
@@ -153,14 +155,9 @@ void mapManager::updateMapReputation(const int & newReputation){
             if(currMapReputation<=0){
                 break; 
             }
-            mapXY[i][j].setCoordCharacter('#'); 
+            mapXY[i][j].setCoordCharacter('#');
+            mapXY[i][j].setCoordColor("\033[34m"); 
             currMapReputation--; 
         }
     }
 }
-
-        // void setMapMoralityRange(const int &); 
-        // void updateMapMorality(const int &); 
-
-        // void setMapReputationRange(const int &); 
-        // void updateMapReputation(const int &); 
