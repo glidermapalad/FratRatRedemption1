@@ -19,7 +19,6 @@ ADD_EXECUTABLE(runAllTests
     src/coord.cpp 
     src/titlePrint.cpp
     src/playerCustomization.cpp
-)
 
 ADD_EXECUTABLE(run 
     src/coord.cpp
@@ -35,4 +34,5 @@ ADD_EXECUTABLE(run
     src/playerCustomization.cpp
     src/titlePrint.cpp
 )
+
 TARGET_LINK_LIBRARIES (runAllTests gtest gtest_main)
