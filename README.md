@@ -5,11 +5,7 @@
 ## Project Description
 **General Description:**
 
-_You did it! You bore through the first week of school and made it to the most popular fraternity, Χαζος (/xazós/), 's first rager of the year! College life is just how you imagined it back in high school, things couldn't get any better!_
-
-_However, a challenge is placed before you that you never expected! You are at your first party, but notice something strange. People are awfully cliquey!!! You thought everyone left that behind in high school, alas, there are completely different groups of people that barely overlap. Only you can decide who you really belong with._
-
-_Are you going to fit in?! Or will everyone shun you forever?! Find out in Frat Rat Redemption, the "try to desperately fit in with everyone" RPG simulator game! Customize your character! Balance your personal morals with your reputation! Resist the temptation and try your very hardest NOT to be a total prick to everyone around you! What kind of college student will you become? Find out in "FRAT RAT REDEMPTION!"_
+_You did it! You bore through the first week of school and made it to the most popular fraternity's first rager of the year! Are you going to fit in?! Or will everyone shun you forever?! Find out in **FRAT RAT REDEMPTION**, the "try to fit in with everyone" RPG simulator game!_
 
 Frat Rat Redemption is a terminal-based RPG in which the user plays as a party goer who tries to navigate their way through  their first college party. The goal of the game is to leave the frat house. The user must navigate through a top-down view of a frat house layout populated with interactable NPCs which are the attendees of the party. There are two stats that the user must balance: Morality and Reputation. You start with mid-leveled morality and zero reputation. To gain reputation points, you must interact with NPCs which initiate a quick-time-event in which the user chooses responses based on the dialogue the NPC says. Depending on the interaction, the reputation and/or morality will be affected. You must gain and/or maintain the highest morality and reputation you can before you leave the frat house. Depending on your results as you leave the house, different endings will play and you get to see what happens to your character.
 
